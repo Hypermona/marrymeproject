@@ -1,0 +1,150 @@
+.container-fluid{
+  background-color:LightGray ;
+  height: 1200px;
+}
+.container{
+  background-color:Gray;
+  height: 600px;
+margin-top: 50px;
+}
+.bar{
+  height: 40px;
+  width: 1350px;
+  background-color: SlateBlue;
+
+}
+.col-sm-1{
+  border: 1px solid;
+  height: 25px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+  margin-left: 20px;
+}
+.h6{
+  align:center;
+}
+.btn{
+  float:left;
+}
+.login{
+height: 300px;
+width: 600px;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* body */
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(0deg,#fff 50%, #2196F3); */
+      background: linear-gradient(0deg,#2196F3,#fff 50%);
+}
+.cont
+{
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    margin-left: 160px;
+}
+.cont:hover .card
+{
+    filter: blur(5px);
+    transform: scale(.7);
+}
+.cont .card
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.cont .card:hover
+{
+    filter: blur(0px);
+    transform: scale(1);
+}
+.cont .card:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s;
+}
+.cont .card:hover:before
+{
+    background: #000;
+    transform: scaleY(1.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.cont .card:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+    background: rgba(255,255,255,.1);
+    z-index: 1;
+}
+.cont .card:hover:after
+{
+    transform: scaleY(1.15);
+}
+.cont .card:hover
+{
+    z-index: 1;
+}
+.cont .card .content
+{
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+.cont .card:hover .content
+{
+    color: #fff;
+}
+.cont .card .content h2
+{
+    font-size: 3em;
+}
+.cont .card .content p
+{
+    font-size: 0.9em;
+}
+.cont .card .content a
+{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+}
+.cont .card:hover .content a
+{
+    background: #2196F3;
+}
